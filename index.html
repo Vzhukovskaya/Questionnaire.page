@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info about your cat</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <h1>Questionnaire page for cat owners:</h1>
+    <fieldset class="first_block">
+        <legend>Info</legend>
+        <div class="box">
+            <label for="name">Pet name:</label>
+            <input type="text" id="name" />
+        </div>
+        <div class="box">
+            <label for="contacts">Owner's name:</label>
+            <input type="text" id="contacts" />
+        </div>
+        <div class="box">
+            <label for="contacts">Phone number:</label>
+            <input type="text" id="contacts" />
+        </div>
+    </fieldset>
+    <fieldset class="second_block">
+        <legend>About breed:</legend>
+        <div>
+            <label for="breed">Pet breed:</label>
+            <select>
+                <option value="option one">British Shorthair</option>
+                <option value="option two">Maine Coon</option>
+                <option value="option tree">Persian</option>
+                <option value="option four">Savannah Cat</option>
+                <option value="option five">Sphynx</option>
+                <option value="option six">Siamese</option>
+            </select>
+            <div class="second_block-box">
+                <div class="box">
+                    <label for="breed">If you haven't found your breed, please describe it:</label>
+                    <input type="text" id="breed">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <form>
+        <div>
+            <p class="summery">What tipe of food you choose?</p>
+            <input type="checkbox" name="food" value="1" />
+            Dry specialized feed.<br />
+            <input type="checkbox" name="food" value="2" />
+            Natural balanced mеnu.<br />
+            <input type="checkbox" name="food" value="3" />
+            Wet specialized feed.<br />
+            <input type="checkbox" name="food" value="4" />
+            Other
+            <br />
+        </div>
+    </form>
+    <div class="next">
+        <label class="summery" for="gender">Cat gender:</label><br />Female
+        <input type="radio" name="gender" /><br />Male <input type="radio" name="gender" />
+    </div>
+    <div class="next box">
+        <div>
+            <label class="summery">Comments:</label>
+        </div>
+        <div class="textarea-box">
+            <textarea rows="8" cols="25" placeholder="If you whant something add, write here."></textarea>
+        </div>
+    </div>
+    <div class="next">
+        <label class="summery" for="photoarea">Possibility to add pet photo:</label>
+        <input type="file" name="photoarea">
+    </div>
+    <div>
+        <button>Save Info</button>
+    </div>
+</body>
+
+</html>
